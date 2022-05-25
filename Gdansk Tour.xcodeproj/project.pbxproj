@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		8961989E283C35A90084977D /* Gdansk_TourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961989D283C35A90084977D /* Gdansk_TourApp.swift */; };
-		896198A0283C35A90084977D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961989F283C35A90084977D /* ContentView.swift */; };
+		896198A0283C35A90084977D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961989F283C35A90084977D /* MainView.swift */; };
 		896198A2283C35AB0084977D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896198A1283C35AB0084977D /* Assets.xcassets */; };
 		896198A5283C35AB0084977D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896198A4283C35AB0084977D /* Preview Assets.xcassets */; };
+		896198AD283D41B40084977D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AC283D41B40084977D /* DetailView.swift */; };
+		896198AF283D424D0084977D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AE283D424D0084977D /* WebView.swift */; };
+		896198B3283D42B70084977D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198B2283D42B70084977D /* Building.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8961989A283C35A90084977D /* Gdansk Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gdansk Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8961989D283C35A90084977D /* Gdansk_TourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gdansk_TourApp.swift; sourceTree = "<group>"; };
-		8961989F283C35A90084977D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8961989F283C35A90084977D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		896198A1283C35AB0084977D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896198A4283C35AB0084977D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		896198AC283D41B40084977D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		896198AE283D424D0084977D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		896198B2283D42B70084977D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				8961989D283C35A90084977D /* Gdansk_TourApp.swift */,
-				8961989F283C35A90084977D /* ContentView.swift */,
+				896198B0283D42540084977D /* Model */,
+				896198AB283D41990084977D /* Views */,
+				896198B1283D425E0084977D /* Controller */,
 				896198A1283C35AB0084977D /* Assets.xcassets */,
 				896198A3283C35AB0084977D /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				896198A4283C35AB0084977D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		896198AB283D41990084977D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8961989F283C35A90084977D /* MainView.swift */,
+				896198AC283D41B40084977D /* DetailView.swift */,
+				896198AE283D424D0084977D /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		896198B0283D42540084977D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				896198B2283D42B70084977D /* Building.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		896198B1283D425E0084977D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896198A0283C35A90084977D /* ContentView.swift in Sources */,
+				896198A0283C35A90084977D /* MainView.swift in Sources */,
+				896198AF283D424D0084977D /* WebView.swift in Sources */,
+				896198B3283D42B70084977D /* Building.swift in Sources */,
+				896198AD283D41B40084977D /* DetailView.swift in Sources */,
 				8961989E283C35A90084977D /* Gdansk_TourApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
