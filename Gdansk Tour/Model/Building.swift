@@ -2,6 +2,9 @@
 //  Building.swift
 //  Gdansk Tour
 //
+//  Class representing each building used in this app
+//  Model for creating building object
+//
 //  Created by Łukasz Gołojuch on 5/24/22.
 //
 
@@ -14,7 +17,7 @@ class Building {
     //Types of builds 
     enum buildingTypes: String{
         case church = "kościół"
-        case museum = "museum"
+        case museum = "muzeum"
         case monument = "pomnik"
     }
     
@@ -25,8 +28,9 @@ class Building {
     var latitude: CLLocationDegrees? //building position (latitude)
     var longitude: CLLocationDegrees? //building position (longitude)
     var website: URL? //official building website
+    var imageName: String?? //name of the image for the background
     
-    init(Name: String, YearOfConstruction: Int, BuildingType: buildingTypes, Description: String, Latitude: CLLocationDegrees, Longitude: CLLocationDegrees, Website: URL) {
+    init(Name: String, YearOfConstruction: Int, BuildingType: buildingTypes, Description: String, Latitude: CLLocationDegrees, Longitude: CLLocationDegrees, Website: URL, ImageName: String) {
         name = Name
         yearOfConstruction = YearOfConstruction
         type = BuildingType
@@ -34,5 +38,6 @@ class Building {
         latitude = Latitude
         longitude = Longitude
         website = Website
+        imageName = ImageName
     }
 }
