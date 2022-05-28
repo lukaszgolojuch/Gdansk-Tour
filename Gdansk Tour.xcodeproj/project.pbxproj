@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89210F5D2842849F0050F3B5 /* BuildingImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89210F5C2842849F0050F3B5 /* BuildingImageClassifier.mlmodel */; };
 		8955327D2840052C00F44067 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955327C2840052C00F44067 /* MapView.swift */; };
 		8955327F28402CBD00F44067 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955327E28402CBD00F44067 /* AppColors.swift */; };
 		89553285284031F300F44067 /* AddImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553284284031F300F44067 /* AddImageComponent.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89210F5C2842849F0050F3B5 /* BuildingImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BuildingImageClassifier.mlmodel; sourceTree = "<group>"; };
 		8955327C2840052C00F44067 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8955327E28402CBD00F44067 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		89553284284031F300F44067 /* AddImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageComponent.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				896198B0283D42540084977D /* Model */,
 				896198AB283D41990084977D /* Views */,
 				896198B1283D425E0084977D /* Controller */,
+				89210F5C2842849F0050F3B5 /* BuildingImageClassifier.mlmodel */,
 				896198A1283C35AB0084977D /* Assets.xcassets */,
 				896198A3283C35AB0084977D /* Preview Content */,
 			);
@@ -197,6 +200,7 @@
 				896198AF283D424D0084977D /* WebView.swift in Sources */,
 				8955327F28402CBD00F44067 /* AppColors.swift in Sources */,
 				896198B3283D42B70084977D /* Building.swift in Sources */,
+				89210F5D2842849F0050F3B5 /* BuildingImageClassifier.mlmodel in Sources */,
 				896198AD283D41B40084977D /* DetailView.swift in Sources */,
 				8961989E283C35A90084977D /* Gdansk_TourApp.swift in Sources */,
 			);
