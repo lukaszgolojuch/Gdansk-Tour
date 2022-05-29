@@ -16,13 +16,14 @@ struct MainView: View {
         NavigationView{
             ZStack{
                 VStack{
-                    Spacer()
-                    Text("Gdańsk")
-                        .font(.largeTitle)
-                        .multilineTextAlignment(.center)
-                        .padding(EdgeInsets(top: 80, leading: 20, bottom: 60, trailing: 20))
-                        .foregroundColor(appColors.darkBlue)
-                                            
+                    ZStack{
+                        Image("gdansk_background")
+                            .resizable()
+                            .scaledToFill()
+                            .ignoresSafeArea(edges: .top)
+                            .frame(height: 200)
+                        Spacer()
+                    }
                     VStack{
                         Spacer()
                         AddImageComponent()

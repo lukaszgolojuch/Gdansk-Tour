@@ -13,8 +13,8 @@ struct PinMapComponent: View {
     
     @State var coordinateRegion: MKCoordinateRegion = {
             var newRegion = MKCoordinateRegion()
-            newRegion.center.latitude = 37.786996
-            newRegion.center.longitude = -122.440100
+            newRegion.center.latitude = 54.372158
+            newRegion.center.longitude = 18.638306
             newRegion.span.latitudeDelta = 0.2
             newRegion.span.longitudeDelta = 0.2
             return newRegion
