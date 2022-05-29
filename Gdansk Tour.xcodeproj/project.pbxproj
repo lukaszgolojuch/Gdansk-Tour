@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89210F5D2842849F0050F3B5 /* BuildingImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89210F5C2842849F0050F3B5 /* BuildingImageClassifier.mlmodel */; };
+		89210F5F28439B530050F3B5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89210F5E28439B530050F3B5 /* WebViewController.swift */; };
 		8955327D2840052C00F44067 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955327C2840052C00F44067 /* MapView.swift */; };
 		8955327F28402CBD00F44067 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955327E28402CBD00F44067 /* AppColors.swift */; };
 		89553285284031F300F44067 /* AddImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553284284031F300F44067 /* AddImageComponent.swift */; };
@@ -17,12 +18,13 @@
 		896198A2283C35AB0084977D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896198A1283C35AB0084977D /* Assets.xcassets */; };
 		896198A5283C35AB0084977D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896198A4283C35AB0084977D /* Preview Assets.xcassets */; };
 		896198AD283D41B40084977D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AC283D41B40084977D /* DetailView.swift */; };
-		896198AF283D424D0084977D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AE283D424D0084977D /* WebView.swift */; };
+		896198AF283D424D0084977D /* WebViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AE283D424D0084977D /* WebViewSwiftUI.swift */; };
 		896198B3283D42B70084977D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198B2283D42B70084977D /* Building.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89210F5C2842849F0050F3B5 /* BuildingImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BuildingImageClassifier.mlmodel; sourceTree = "<group>"; };
+		89210F5E28439B530050F3B5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8955327C2840052C00F44067 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8955327E28402CBD00F44067 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		89553284284031F300F44067 /* AddImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageComponent.swift; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 		896198A1283C35AB0084977D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896198A4283C35AB0084977D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		896198AC283D41B40084977D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		896198AE283D424D0084977D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		896198AE283D424D0084977D /* WebViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewSwiftUI.swift; sourceTree = "<group>"; };
 		896198B2283D42B70084977D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +103,7 @@
 				895532882840345E00F44067 /* MainViewUIComponents */,
 				8961989F283C35A90084977D /* MainView.swift */,
 				896198AC283D41B40084977D /* DetailView.swift */,
-				896198AE283D424D0084977D /* WebView.swift */,
+				896198AE283D424D0084977D /* WebViewSwiftUI.swift */,
 				8955327C2840052C00F44067 /* MapView.swift */,
 			);
 			path = Views;
@@ -119,6 +121,7 @@
 		896198B1283D425E0084977D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				89210F5E28439B530050F3B5 /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,12 +200,13 @@
 				895532872840327400F44067 /* PinMapComponent.swift in Sources */,
 				89553285284031F300F44067 /* AddImageComponent.swift in Sources */,
 				8955327D2840052C00F44067 /* MapView.swift in Sources */,
-				896198AF283D424D0084977D /* WebView.swift in Sources */,
+				896198AF283D424D0084977D /* WebViewSwiftUI.swift in Sources */,
 				8955327F28402CBD00F44067 /* AppColors.swift in Sources */,
 				896198B3283D42B70084977D /* Building.swift in Sources */,
 				89210F5D2842849F0050F3B5 /* BuildingImageClassifier.mlmodel in Sources */,
 				896198AD283D41B40084977D /* DetailView.swift in Sources */,
 				8961989E283C35A90084977D /* Gdansk_TourApp.swift in Sources */,
+				89210F5F28439B530050F3B5 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
