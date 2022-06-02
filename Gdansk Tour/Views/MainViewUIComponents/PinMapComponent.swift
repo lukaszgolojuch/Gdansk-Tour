@@ -43,18 +43,18 @@ struct PinMapComponent: View {
                             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
                             .shadow(radius: 6)
                         
-                        Button(action: {
-                            print("Add photo from gallery")
-                        }) {
-                            Text("Zobacz punkty na mapie")
-                        }
-                            .padding()
-                            .shadow(radius: 10)
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.white)
-                            .background(appColors.buttonBackgroundColor)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().stroke(appColors.overlayColor))
+            NavigationLink {
+                MapView()
+            } label: {
+                Text("Zobacz punkty na mapie")
+            }
+                .padding()
+                .shadow(radius: 10)
+                .frame(maxWidth: .infinity)
+                .foregroundColor(.white)
+                .background(appColors.buttonBackgroundColor)
+                .clipShape(Capsule())
+                .overlay(Capsule().stroke(appColors.overlayColor))
         }
     }
 }

@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct AddImageComponent: View {
+    @State var isPresenting: Bool = false
+    @State var uiImage: UIImage?
+    @State var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    
     let appColors = AppColors()
+    @ObservedObject var classifier: ImageClassifier
+    
     
     var body: some View {
         VStack(alignment: .leading){
@@ -18,11 +24,12 @@ struct AddImageComponent: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .font(.title)
                 .foregroundColor(appColors.darkBlue)
+            
             HStack{
                 Button(action: {
-                    print("Create photo")
+                    isPresenting = true
+                    sourceType = .camera
                 }) {
-                    
                     Image("camera_icon")
                         .resizable()
                         .frame(width: 100, height: 100, alignment: .trailing)
@@ -33,7 +40,8 @@ struct AddImageComponent: View {
                 
                 Spacer()
                 Button(action: {
-                    print("Add photo from gallery")
+                    isPresenting = true
+                    sourceType = .photoLibrary
                 }) {
                     Text("Dodaj zdjęcie z galerii")
                 }
@@ -45,11 +53,20 @@ struct AddImageComponent: View {
                 .overlay(Capsule().stroke(appColors.overlayColor, lineWidth: 2))
             }
         }
+        .sheet(isPresented: $isPresenting){
+            ImagePicker(uiImage: $uiImage, isPresenting:  $isPresenting, sourceType: $sourceType)
+                .onDisappear{
+                    if uiImage != nil {
+                        classifier.detect(uiImage: uiImage!)
+                    }
+                }
+            
+        }
     }
 }
 
 struct AddImageComponent_Previews: PreviewProvider {
     static var previews: some View {
-        AddImageComponent()
+        AddImageComponent(classifier: ImageClassifier())
     }
 }

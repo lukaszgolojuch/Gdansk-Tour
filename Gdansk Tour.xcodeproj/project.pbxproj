@@ -20,6 +20,9 @@
 		896198AD283D41B40084977D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AC283D41B40084977D /* DetailView.swift */; };
 		896198AF283D424D0084977D /* WebViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AE283D424D0084977D /* WebViewSwiftUI.swift */; };
 		896198B3283D42B70084977D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198B2283D42B70084977D /* Building.swift */; };
+		89E974732848EF6F007677EB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E974722848EF6F007677EB /* ImagePicker.swift */; };
+		89E974752849087B007677EB /* Classfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E974742849087B007677EB /* Classfier.swift */; };
+		89E9747728490F27007677EB /* ImageClassfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9747628490F27007677EB /* ImageClassfier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		896198AC283D41B40084977D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		896198AE283D424D0084977D /* WebViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewSwiftUI.swift; sourceTree = "<group>"; };
 		896198B2283D42B70084977D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		89E974722848EF6F007677EB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		89E974742849087B007677EB /* Classfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classfier.swift; sourceTree = "<group>"; };
+		89E9747628490F27007677EB /* ImageClassfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassfier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				896198AC283D41B40084977D /* DetailView.swift */,
 				896198AE283D424D0084977D /* WebViewSwiftUI.swift */,
 				8955327C2840052C00F44067 /* MapView.swift */,
+				89E974722848EF6F007677EB /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				89210F5E28439B530050F3B5 /* WebViewController.swift */,
+				89E974742849087B007677EB /* Classfier.swift */,
+				89E9747628490F27007677EB /* ImageClassfier.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896198A0283C35A90084977D /* MainView.swift in Sources */,
+				89E974752849087B007677EB /* Classfier.swift in Sources */,
 				895532872840327400F44067 /* PinMapComponent.swift in Sources */,
 				89553285284031F300F44067 /* AddImageComponent.swift in Sources */,
 				8955327D2840052C00F44067 /* MapView.swift in Sources */,
@@ -205,7 +215,9 @@
 				896198B3283D42B70084977D /* Building.swift in Sources */,
 				89210F5D2842849F0050F3B5 /* BuildingImageClassifier.mlmodel in Sources */,
 				896198AD283D41B40084977D /* DetailView.swift in Sources */,
+				89E974732848EF6F007677EB /* ImagePicker.swift in Sources */,
 				8961989E283C35A90084977D /* Gdansk_TourApp.swift in Sources */,
+				89E9747728490F27007677EB /* ImageClassfier.swift in Sources */,
 				89210F5F28439B530050F3B5 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,11 +350,15 @@
 				DEVELOPMENT_TEAM = DQXF6DAASK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to get photo of the building";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use your photo library to get photo of the building";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,11 +383,15 @@
 				DEVELOPMENT_TEAM = DQXF6DAASK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use camera to get photo of the building";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use your photo library to get photo of the building";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

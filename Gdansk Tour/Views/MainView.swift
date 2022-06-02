@@ -26,7 +26,7 @@ struct MainView: View {
                     }
                     VStack{
                         Spacer()
-                        AddImageComponent()
+                        AddImageComponent( classifier: ImageClassifier())
                             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 200)
                             .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                         
