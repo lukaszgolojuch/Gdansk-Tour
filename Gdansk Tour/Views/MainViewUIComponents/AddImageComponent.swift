@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddImageComponent: View {
     @State var isPresenting: Bool = false
+    @State var moveToDetailView: Bool = false
     @State var uiImage: UIImage?
     @State var sourceType: UIImagePickerController.SourceType = .photoLibrary
     
@@ -26,9 +27,12 @@ struct AddImageComponent: View {
                 .foregroundColor(appColors.darkBlue)
             
             HStack{
+            
+//MARK: - Add photo from camera
                 Button(action: {
                     isPresenting = true
                     sourceType = .camera
+                    
                 }) {
                     Image("camera_icon")
                         .resizable()
@@ -36,21 +40,29 @@ struct AddImageComponent: View {
                         .clipShape(Circle())
                         .shadow(radius: 10)
                         .overlay(Circle().stroke(appColors.overlayColor, lineWidth: 2))
+                        .overlay(NavigationLink(destination: DetailView(), isActive: $moveToDetailView, label: {
+                                        EmptyView()
+                                    }))
                 }
                 
                 Spacer()
+                
+//MARK: - Add photo from gallery
                 Button(action: {
                     isPresenting = true
                     sourceType = .photoLibrary
                 }) {
                     Text("Dodaj zdjęcie z galerii")
                 }
-                .foregroundColor(.white)
-                .shadow(radius: 10)
-                .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
-                .background(appColors.buttonBackgroundColor)
-                .clipShape(Capsule())
-                .overlay(Capsule().stroke(appColors.overlayColor, lineWidth: 2))
+                    .foregroundColor(.white)
+                    .shadow(radius: 10)
+                    .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+                    .background(appColors.buttonBackgroundColor)
+                    .clipShape(Capsule())
+                    .overlay(Capsule().stroke(appColors.overlayColor, lineWidth: 2))
+                    .overlay(NavigationLink(destination: DetailView(), isActive: $moveToDetailView, label: {
+                                    EmptyView()
+                                }))
             }
         }
         .sheet(isPresented: $isPresenting){
@@ -58,6 +70,7 @@ struct AddImageComponent: View {
                 .onDisappear{
                     if uiImage != nil {
                         classifier.detect(uiImage: uiImage!)
+                        moveToDetailView = true
                     }
                 }
             

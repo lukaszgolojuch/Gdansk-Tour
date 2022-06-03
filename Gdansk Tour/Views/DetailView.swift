@@ -9,6 +9,8 @@ import SwiftUI
 import MapKit
 
 struct DetailView: View {
+    @State private var isActive: Bool = false
+    
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
     
     @State private var building: Building = Building(Name: "Muzeum II wojny światowej", YearOfConstruction: 2015, BuildingType: .museum, Description: "Muzeum drugiej wojny światowej opowiadające o drugiej wojnie światowej", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "example_image")
@@ -19,17 +21,21 @@ struct DetailView: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
+                .frame(height: getPhotoHeight())
 
-            Map(coordinateRegion: $region)
-                .frame(width: 300, height: 200)
-                .clipShape(Circle())
-                .overlay {
-                    Circle().stroke(Color(red: 45/255, green: 49/255, blue: 250/255), lineWidth: 2)
-                }
-                .shadow(radius: 7)
-                .offset(y: -130)
-                .padding(.bottom, -130)
+            NavigationLink {
+                MapView()
+            } label: {
+                    Map(coordinateRegion: $region)
+                        .frame(width: 300, height: 200)
+                        .clipShape(Circle())
+                        .overlay {
+                            Circle().stroke(Color(red: 45/255, green: 49/255, blue: 250/255), lineWidth: 2)
+                        }
+                        .shadow(radius: 7)
+                        .offset(y: -getMapOffset())
+                        .padding(.bottom, -130)
+            }
 
             VStack(alignment: .leading) {
                 Text(building.name ?? "Brak nazwy")
@@ -42,6 +48,7 @@ struct DetailView: View {
                     Text(String(building.yearOfConstruction ?? 2022))
                         .font(.subheadline)
                 }
+                    .padding([.top, .bottom], 3)
 
                 Divider()
 
@@ -54,6 +61,14 @@ struct DetailView: View {
 
             Spacer()
         }
+    }
+    
+    func getPhotoHeight() -> CGFloat {
+        return (UIScreen.main.bounds.height / 4)
+    }
+    
+    func getMapOffset() -> CGFloat {
+        return (UIScreen.main.bounds.height / 6.5)
     }
 }
 

@@ -25,13 +25,11 @@ struct MapView: View {
         ]
     
     var body: some View {
-        NavigationView{
-            Map(coordinateRegion: $coordinateRegion,
-                            annotationItems: annotationItems) {item in
-                            MapPin(coordinate: item.coordinate)
-                        }
-                            .edgesIgnoringSafeArea(.all)
-        }
+        Map(coordinateRegion: $coordinateRegion,
+            annotationItems: annotationItems) {item in
+                    MapPin(coordinate: item.coordinate)
+            }
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

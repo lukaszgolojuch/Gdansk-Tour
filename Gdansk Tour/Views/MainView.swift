@@ -21,7 +21,7 @@ struct MainView: View {
                             .resizable()
                             .scaledToFill()
                             .ignoresSafeArea(edges: .top)
-                            .frame(height: 200)
+                            .frame(height: getImageHeight())
                         Spacer()
                     }
                     VStack{
@@ -37,6 +37,7 @@ struct MainView: View {
 
                         Spacer()
                     }
+                    .frame(width: .infinity, height: getStackHeight(), alignment: .top)
                     .background(appColors.lightBlue)
                     .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
                     .overlay(RoundedRectangle(cornerRadius: 25.0, style: .continuous)
@@ -46,6 +47,14 @@ struct MainView: View {
             }
             .ignoresSafeArea(edges: .all)
         }
+    }
+    
+    func getStackHeight() -> CGFloat {
+        return (UIScreen.main.bounds.height * 0.75)
+    }
+    
+    func getImageHeight() -> CGFloat {
+        return (UIScreen.main.bounds.height * 0.25)
     }
 }
 
