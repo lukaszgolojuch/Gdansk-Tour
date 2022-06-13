@@ -11,9 +11,9 @@ import MapKit
 struct DetailView: View {
     @State private var isActive: Bool = false
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 54.356069, longitude: 18.659916), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
     
-    @State private var building: Building = Building(Name: "Muzeum II wojny światowej", YearOfConstruction: 2015, BuildingType: .museum, Description: "Muzeum drugiej wojny światowej opowiadające o drugiej wojnie światowej", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "example_image")
+    @State private var building: Building = Building(Name: "Muzeum II wojny światowej", YearOfConstruction: 2015, BuildingType: .museum, Description: "Muzeum drugiej wojny światowej opowiadające o drugiej wojnie światowej", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "muzeumwojny")
     
     var body: some View {
         VStack {

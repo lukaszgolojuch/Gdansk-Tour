@@ -20,6 +20,7 @@
 		896198AD283D41B40084977D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AC283D41B40084977D /* DetailView.swift */; };
 		896198AF283D424D0084977D /* WebViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AE283D424D0084977D /* WebViewSwiftUI.swift */; };
 		896198B3283D42B70084977D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198B2283D42B70084977D /* Building.swift */; };
+		89C0C7552857D080003C76B2 /* buildingInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 89C0C7542857D080003C76B2 /* buildingInfo.json */; };
 		89E974732848EF6F007677EB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E974722848EF6F007677EB /* ImagePicker.swift */; };
 		89E974752849087B007677EB /* Classfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E974742849087B007677EB /* Classfier.swift */; };
 		89E9747728490F27007677EB /* ImageClassfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9747628490F27007677EB /* ImageClassfier.swift */; };
@@ -40,6 +41,7 @@
 		896198AC283D41B40084977D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		896198AE283D424D0084977D /* WebViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewSwiftUI.swift; sourceTree = "<group>"; };
 		896198B2283D42B70084977D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		89C0C7542857D080003C76B2 /* buildingInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buildingInfo.json; sourceTree = "<group>"; };
 		89E974722848EF6F007677EB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		89E974742849087B007677EB /* Classfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classfier.swift; sourceTree = "<group>"; };
 		89E9747628490F27007677EB /* ImageClassfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassfier.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				896198B1283D425E0084977D /* Controller */,
 				89210F5C2842849F0050F3B5 /* BuildingImageClassifier.mlmodel */,
 				896198A1283C35AB0084977D /* Assets.xcassets */,
+				89C0C7542857D080003C76B2 /* buildingInfo.json */,
 				896198A3283C35AB0084977D /* Preview Content */,
 			);
 			path = "Gdansk Tour";
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896198A5283C35AB0084977D /* Preview Assets.xcassets in Resources */,
+				89C0C7552857D080003C76B2 /* buildingInfo.json in Resources */,
 				896198A2283C35AB0084977D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

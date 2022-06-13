@@ -19,6 +19,7 @@ class Building {
         case church = "kościół"
         case museum = "muzeum"
         case monument = "pomnik"
+        case other = "inne"
     }
     
     var name: String? //name of the building
