@@ -40,7 +40,7 @@ struct AddImageComponent: View {
                         .clipShape(Circle())
                         .shadow(radius: 10)
                         .overlay(Circle().stroke(appColors.overlayColor, lineWidth: 2))
-                        .overlay(NavigationLink(destination: DetailView(), isActive: $moveToDetailView, label: {
+                        .overlay(NavigationLink(destination: DetailView(buildingDetails: Building(Name: "Muzeum wojenne", YearOfConstruction: 2015, BuildingType: .museum, Description: "Muzeum drugiej wojny światowej opowiadające o drugiej wojnie światowej", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "muzeumwojny")), isActive: $moveToDetailView, label: {
                                         EmptyView()
                                     }))
                 }
@@ -60,7 +60,7 @@ struct AddImageComponent: View {
                     .background(appColors.buttonBackgroundColor)
                     .clipShape(Capsule())
                     .overlay(Capsule().stroke(appColors.overlayColor, lineWidth: 2))
-                    .overlay(NavigationLink(destination: DetailView(), isActive: $moveToDetailView, label: {
+                    .overlay(NavigationLink(destination: DetailView(buildingDetails: Building(Name: "Muzeum wojenne", YearOfConstruction: 2015, BuildingType: .museum, Description: "Muzeum drugiej wojny światowej opowiadające o drugiej wojnie światowej", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "muzeumwojny")), isActive: $moveToDetailView, label: {
                                     EmptyView()
                                 }))
             }

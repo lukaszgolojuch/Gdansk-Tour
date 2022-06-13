@@ -13,11 +13,11 @@ struct DetailView: View {
     
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 54.356069, longitude: 18.659916), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
     
-    @State private var building: Building = Building(Name: "Muzeum II wojny światowej", YearOfConstruction: 2015, BuildingType: .museum, Description: "Muzeum drugiej wojny światowej opowiadające o drugiej wojnie światowej", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "muzeumwojny")
+    var building: Building?
     
     var body: some View {
         VStack {
-            Image((building.imageName ?? "camera_icon") ?? "camera_icon")
+            Image((building?.imageName ?? "camera_icon") ?? "camera_icon")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea(edges: .top)
@@ -38,14 +38,14 @@ struct DetailView: View {
             }
 
             VStack(alignment: .leading) {
-                Text(building.name ?? "Brak nazwy")
+                Text(building?.name ?? "Brak nazwy")
                     .font(.title)
 
                 HStack {
-                    Text("Typ: " + (building.type?.rawValue ?? "Budynek"))
+                    Text("Typ: " + (building?.type?.rawValue ?? "Budynek"))
                         .font(.subheadline)
                     Spacer()
-                    Text(String(building.yearOfConstruction ?? 2022))
+                    Text(String(building?.yearOfConstruction ?? 2022))
                         .font(.subheadline)
                 }
                     .padding([.top, .bottom], 3)
@@ -54,7 +54,7 @@ struct DetailView: View {
 
                 Text("Opis")
                     .font(.title2)
-                Text(building.description ?? "Brak opisu")
+                Text(building?.description ?? "Brak opisu")
                     .padding(.top, 10)
             }
             .padding()
@@ -70,11 +70,15 @@ struct DetailView: View {
     func getMapOffset() -> CGFloat {
         return (UIScreen.main.bounds.height / 6.5)
     }
+    
+    init(buildingDetails: Building) {
+        building = buildingDetails
+    }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(buildingDetails: Building(Name: "Fake", YearOfConstruction: 2015, BuildingType: .museum, Description: "Fake2", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "muzeumwojny"))
     }
 }
 
