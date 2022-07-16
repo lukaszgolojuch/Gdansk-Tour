@@ -37,7 +37,7 @@ struct MainView: View {
 
                         Spacer()
                     }
-                    .frame(width: .infinity, height: getStackHeight(), alignment: .top)
+                    .frame(width: UIScreen.main.bounds.width, height: getStackHeight(), alignment: .top)
                     .background(appColors.lightBlue)
                     .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
                     .overlay(RoundedRectangle(cornerRadius: 25.0, style: .continuous)

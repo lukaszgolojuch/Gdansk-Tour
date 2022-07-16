@@ -9,15 +9,15 @@ import SwiftUI
 import MapKit
 
 struct DetailView: View {
+    
+    let buildingData: BuildingData
     @State private var isActive: Bool = false
     
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 54.356069, longitude: 18.659916), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
     
-    var building: Building?
-    
     var body: some View {
         VStack {
-            Image((building?.imageName ?? "camera_icon") ?? "camera_icon")
+            Image((buildingData.imageName))
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea(edges: .top)
@@ -38,14 +38,14 @@ struct DetailView: View {
             }
 
             VStack(alignment: .leading) {
-                Text(building?.name ?? "Brak nazwy")
+                Text(buildingData.name )
                     .font(.title)
 
                 HStack {
-                    Text("Typ: " + (building?.type?.rawValue ?? "Budynek"))
+                    Text("Typ: " + (buildingData.buildingType ))
                         .font(.subheadline)
                     Spacer()
-                    Text(String(building?.yearOfConstruction ?? 2022))
+                    Text(String(buildingData.yearOfConstruction ))
                         .font(.subheadline)
                 }
                     .padding([.top, .bottom], 3)
@@ -54,7 +54,7 @@ struct DetailView: View {
 
                 Text("Opis")
                     .font(.title2)
-                Text(building?.description ?? "Brak opisu")
+                Text(buildingData.description )
                     .padding(.top, 10)
             }
             .padding()
@@ -70,15 +70,11 @@ struct DetailView: View {
     func getMapOffset() -> CGFloat {
         return (UIScreen.main.bounds.height / 6.5)
     }
-    
-    init(buildingDetails: Building) {
-        building = buildingDetails
-    }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(buildingDetails: Building(Name: "Fake", YearOfConstruction: 2015, BuildingType: .museum, Description: "Fake2", Latitude: 51.507222, Longitude: -0.1275, Website: URL(string: "www.muzeum.pl")!, ImageName: "muzeumwojny"))
+        DetailView(buildingData: BuildingData(name: "Building name", yearOfConstruction: 2000, buildingType: "Muzeum", description: "fnjdsnafjsa", latitude: 22.22222, longitude: 33.33333, website: "wwww.google.com", imageName: "soldek"))
     }
 }
 
