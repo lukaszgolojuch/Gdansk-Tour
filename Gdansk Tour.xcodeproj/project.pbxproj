@@ -20,6 +20,7 @@
 		896198AD283D41B40084977D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AC283D41B40084977D /* DetailView.swift */; };
 		896198AF283D424D0084977D /* WebViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198AE283D424D0084977D /* WebViewSwiftUI.swift */; };
 		896198B3283D42B70084977D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896198B2283D42B70084977D /* Building.swift */; };
+		899C1B242882C77700AD6640 /* JSONController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C1B232882C77700AD6640 /* JSONController.swift */; };
 		89C0C7552857D080003C76B2 /* buildingInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 89C0C7542857D080003C76B2 /* buildingInfo.json */; };
 		89E974732848EF6F007677EB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E974722848EF6F007677EB /* ImagePicker.swift */; };
 		89E974752849087B007677EB /* Classfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E974742849087B007677EB /* Classfier.swift */; };
@@ -41,6 +42,7 @@
 		896198AC283D41B40084977D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		896198AE283D424D0084977D /* WebViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewSwiftUI.swift; sourceTree = "<group>"; };
 		896198B2283D42B70084977D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		899C1B232882C77700AD6640 /* JSONController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONController.swift; sourceTree = "<group>"; };
 		89C0C7542857D080003C76B2 /* buildingInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buildingInfo.json; sourceTree = "<group>"; };
 		89E974722848EF6F007677EB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		89E974742849087B007677EB /* Classfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classfier.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				89210F5E28439B530050F3B5 /* WebViewController.swift */,
 				89E974742849087B007677EB /* Classfier.swift */,
 				89E9747628490F27007677EB /* ImageClassfier.swift */,
+				899C1B232882C77700AD6640 /* JSONController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				8955327D2840052C00F44067 /* MapView.swift in Sources */,
 				896198AF283D424D0084977D /* WebViewSwiftUI.swift in Sources */,
 				8955327F28402CBD00F44067 /* AppColors.swift in Sources */,
+				899C1B242882C77700AD6640 /* JSONController.swift in Sources */,
 				896198B3283D42B70084977D /* Building.swift in Sources */,
 				89210F5D2842849F0050F3B5 /* BuildingImageClassifier.mlmodel in Sources */,
 				896198AD283D41B40084977D /* DetailView.swift in Sources */,
