@@ -11,12 +11,13 @@ import MapKit
 struct PinMapComponent: View {
     let appColors = AppColors()
     
+    @State var jsonController = JSONController()
     @State var coordinateRegion: MKCoordinateRegion = {
             var newRegion = MKCoordinateRegion()
             newRegion.center.latitude = 54.372158
             newRegion.center.longitude = 18.638306
-            newRegion.span.latitudeDelta = 0.2
-            newRegion.span.longitudeDelta = 0.2
+            newRegion.span.latitudeDelta = 0.05
+            newRegion.span.longitudeDelta = 0.05
             return newRegion
         }()
     
@@ -36,9 +37,9 @@ struct PinMapComponent: View {
                 .foregroundColor(appColors.darkBlue)
 
             Map(coordinateRegion: $coordinateRegion,
-                            annotationItems: annotationItems) {item in
-                            MapPin(coordinate: item.coordinate)
-                        }
+                annotationItems: jsonController.locationData) {item in
+                        MapPin(coordinate: item.locationCoordinate2D)
+                }
                             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 300, alignment: .leading)
                             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
                             .shadow(radius: 6)

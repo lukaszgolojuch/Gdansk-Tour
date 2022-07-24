@@ -15,8 +15,8 @@ struct MapView: View {
             var newRegion = MKCoordinateRegion()
             newRegion.center.latitude = 54.372158
             newRegion.center.longitude = 18.638306
-            newRegion.span.latitudeDelta = 0.2
-            newRegion.span.longitudeDelta = 0.2
+            newRegion.span.latitudeDelta = 0.05
+            newRegion.span.longitudeDelta = 0.05
             return newRegion
         }()
     
