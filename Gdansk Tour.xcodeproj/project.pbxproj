@@ -13,6 +13,7 @@
 		8955327F28402CBD00F44067 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955327E28402CBD00F44067 /* AppColors.swift */; };
 		89553285284031F300F44067 /* AddImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553284284031F300F44067 /* AddImageComponent.swift */; };
 		895532872840327400F44067 /* PinMapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895532862840327400F44067 /* PinMapComponent.swift */; };
+		89595F24288DADA8005AB67A /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89595F23288DADA8005AB67A /* LocationData.swift */; };
 		8961989E283C35A90084977D /* Gdansk_TourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961989D283C35A90084977D /* Gdansk_TourApp.swift */; };
 		896198A0283C35A90084977D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961989F283C35A90084977D /* MainView.swift */; };
 		896198A2283C35AB0084977D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896198A1283C35AB0084977D /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		8955327E28402CBD00F44067 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		89553284284031F300F44067 /* AddImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageComponent.swift; sourceTree = "<group>"; };
 		895532862840327400F44067 /* PinMapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMapComponent.swift; sourceTree = "<group>"; };
+		89595F23288DADA8005AB67A /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		8961989A283C35A90084977D /* Gdansk Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gdansk Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8961989D283C35A90084977D /* Gdansk_TourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gdansk_TourApp.swift; sourceTree = "<group>"; };
 		8961989F283C35A90084977D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				8955327E28402CBD00F44067 /* AppColors.swift */,
 				896F9081288D414E00BE9B7A /* BuildingData.swift */,
+				89595F23288DADA8005AB67A /* LocationData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89595F24288DADA8005AB67A /* LocationData.swift in Sources */,
 				896198A0283C35A90084977D /* MainView.swift in Sources */,
 				896F9082288D414E00BE9B7A /* BuildingData.swift in Sources */,
 				89E974752849087B007677EB /* Classfier.swift in Sources */,

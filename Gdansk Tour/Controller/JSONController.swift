@@ -10,6 +10,7 @@ import Foundation
 public class JSONController {
     
     @Published var buildingData = [BuildingData]()
+    @Published var locationData = [LocationData]()
     
     init() {
         //load data when JSONController class object is created
@@ -26,6 +27,10 @@ public class JSONController {
                 
                 //save JSON data into buildingData array
                 self.buildingData = dataFromJson
+                
+                for building in buildingData {
+                    locationData.append(LocationData(name: building.name, latitude: building.latitude, longitude: building.longitude, buildingObject: building))
+                }
             }
             catch{
                 print(error)

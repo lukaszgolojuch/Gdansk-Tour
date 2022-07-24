@@ -10,6 +10,7 @@ import MapKit
 
 struct MapView: View {
     
+    @State var jsonController = JSONController()
     @State var coordinateRegion: MKCoordinateRegion = {
             var newRegion = MKCoordinateRegion()
             newRegion.center.latitude = 54.372158
@@ -19,15 +20,10 @@ struct MapView: View {
             return newRegion
         }()
     
-        var annotationItems: [MyAnnotationItem] = [
-            MyAnnotationItem(coordinate: CLLocationCoordinate2D(latitude: 37.810000, longitude: -122.477450)),
-            MyAnnotationItem(coordinate: CLLocationCoordinate2D(latitude: 37.786996, longitude: -122.419281)),
-        ]
-    
     var body: some View {
         Map(coordinateRegion: $coordinateRegion,
-            annotationItems: annotationItems) {item in
-                    MapPin(coordinate: item.coordinate)
+            annotationItems: jsonController.locationData) {item in
+                    MapPin(coordinate: item.locationCoordinate2D)
             }
             .edgesIgnoringSafeArea(.all)
     }

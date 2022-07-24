@@ -36,28 +36,29 @@ struct DetailView: View {
                         .offset(y: -getMapOffset())
                         .padding(.bottom, -130)
             }
+            ScrollView{
+                VStack(alignment: .leading) {
+                    Text(buildingData.name )
+                        .font(.title)
 
-            VStack(alignment: .leading) {
-                Text(buildingData.name )
-                    .font(.title)
+                    HStack {
+                        Text("Typ: " + (buildingData.buildingType ))
+                            .font(.subheadline)
+                        Spacer()
+                        Text(String(buildingData.yearOfConstruction ))
+                            .font(.subheadline)
+                    }
+                        .padding([.top, .bottom], 3)
 
-                HStack {
-                    Text("Typ: " + (buildingData.buildingType ))
-                        .font(.subheadline)
-                    Spacer()
-                    Text(String(buildingData.yearOfConstruction ))
-                        .font(.subheadline)
+                    Divider()
+
+                    Text("Opis")
+                        .font(.title2)
+                    Text(buildingData.description )
+                        .padding(.top, 10)
                 }
-                    .padding([.top, .bottom], 3)
-
-                Divider()
-
-                Text("Opis")
-                    .font(.title2)
-                Text(buildingData.description )
-                    .padding(.top, 10)
+                .padding()
             }
-            .padding()
 
             Spacer()
         }
