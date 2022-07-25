@@ -118,7 +118,6 @@
 				896198AC283D41B40084977D /* DetailView.swift */,
 				896198AE283D424D0084977D /* WebView.swift */,
 				8955327C2840052C00F44067 /* MapView.swift */,
-				89E974722848EF6F007677EB /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +135,7 @@
 		896198B1283D425E0084977D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				89E974722848EF6F007677EB /* ImagePicker.swift */,
 				89210F5E28439B530050F3B5 /* WebViewController.swift */,
 				89E974742849087B007677EB /* Classfier.swift */,
 				89E9747628490F27007677EB /* ImageClassfier.swift */,

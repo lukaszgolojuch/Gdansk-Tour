@@ -20,12 +20,7 @@ struct PinMapComponent: View {
             newRegion.span.longitudeDelta = 0.05
             return newRegion
         }()
-    
-        var annotationItems: [MyAnnotationItem] = [
-            MyAnnotationItem(coordinate: CLLocationCoordinate2D(latitude: 37.810000, longitude: -122.477450)),
-            MyAnnotationItem(coordinate: CLLocationCoordinate2D(latitude: 37.786996, longitude: -122.419281)),
-        ]
-    
+
     var body: some View{
         
         VStack(alignment: .leading){
