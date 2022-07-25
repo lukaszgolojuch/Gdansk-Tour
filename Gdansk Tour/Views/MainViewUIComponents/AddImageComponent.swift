@@ -44,7 +44,7 @@ struct AddImageComponent: View {
                         .clipShape(Circle())
                         .shadow(radius: 10)
                         .overlay(Circle().stroke(appColors.overlayColor, lineWidth: 2))
-                        .overlay(NavigationLink(destination: DetailView(buildingData: building ?? BuildingData(name: "Building name", yearOfConstruction: 2000, buildingType: "Muzeum", description: "fnjdsnafjsa", latitude: 22.22222, longitude: 33.33333, website: "wwww.google.com", imageName: "soldek")), isActive: $moveToDetailView, label: {
+                        .overlay(NavigationLink(destination: DetailView(building: building ?? BuildingData(name: "Building name", yearOfConstruction: 2000, buildingType: "Muzeum", description: "fnjdsnafjsa", latitude: 22.22222, longitude: 33.33333, website: "wwww.google.com", imageName: "soldek")), isActive: $moveToDetailView, label: {
                                         EmptyView()
                                     }))
                 }
@@ -64,7 +64,7 @@ struct AddImageComponent: View {
                     .background(appColors.buttonBackgroundColor)
                     .clipShape(Capsule())
                     .overlay(Capsule().stroke(appColors.overlayColor, lineWidth: 2))
-                    .overlay(NavigationLink(destination: DetailView(buildingData: building ?? BuildingData(name: "Building name", yearOfConstruction: 2000, buildingType: "Muzeum", description: "fnjdsnafjsa", latitude: 22.22222, longitude: 33.33333, website: "wwww.google.com", imageName: "soldek")), isActive: $moveToDetailView, label: {
+                    .overlay(NavigationLink(destination: DetailView(building: building ?? BuildingData(name: "Building name", yearOfConstruction: 2000, buildingType: "Muzeum", description: "fnjdsnafjsa", latitude: 22.22222, longitude: 33.33333, website: "wwww.google.com", imageName: "soldek")), isActive: $moveToDetailView, label: {
                                     EmptyView()
                                 }))
             }

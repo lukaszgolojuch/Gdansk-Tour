@@ -11,9 +11,15 @@ import MapKit
 struct DetailView: View {
     
     let buildingData: BuildingData
-    @State private var isActive: Bool = false
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 54.356069, longitude: 18.659916), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+    @State var jsonController = JSONController()
+    @State private var isActive: Bool = false
+    @State private var region: MKCoordinateRegion
+    
+    init(building: BuildingData) {
+        buildingData = building
+        region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: building.latitude, longitude: building.longitude), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+    }
     
     var body: some View {
         VStack {
@@ -87,7 +93,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(buildingData: BuildingData(name: "Building name", yearOfConstruction: 2000, buildingType: "Muzeum", description: "fnjdsnafjsa", latitude: 22.22222, longitude: 33.33333, website: "wwww.google.com", imageName: "soldek"))
+        DetailView(building: BuildingData(name: "Building name", yearOfConstruction: 2000, buildingType: "Muzeum", description: "fnjdsnafjsa", latitude: 22.22222, longitude: 33.33333, website: "wwww.google.com", imageName: "soldek"))
     }
 }
 
