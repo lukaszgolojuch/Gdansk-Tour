@@ -2,7 +2,7 @@
     {
         "name": "Muzeum II wojny światowej",
         "yearOfConstruction": 2017,
-        "buildingType": "museum",
+        "buildingType": "muzeum",
         "description": "Państwowa instytucja kultury powołana w 2008. Muzeum zostało otwarte 23 marca 2017. Muzeum jest podległe i nadzorowane przez Ministerstwo Kultury, Dziedzictwa Narodowego i Sportu.",
         "latitude": 54.356069,
         "longitude": 18.659916,
@@ -13,7 +13,7 @@
     {
         "name": "Sołdek",
         "yearOfConstruction": 1948,
-        "buildingType": "museum",
+        "buildingType": "muzeum",
         "description": "SS Sołdek – masowiec o napędzie parowym – pierwszy statek zbudowany całkowicie w Polsce po II wojnie światowej, który następnie przez szereg lat pływał pod polską banderą handlową, a później służył m.in. jako magazyn pływający na Odrze w Szczecinie",
         "latitude": 54.351394,
         "longitude": 18.658643,
@@ -24,7 +24,7 @@
     {
         "name": "Żuraw",
         "yearOfConstruction": 1444,
-        "buildingType": "museum",
+        "buildingType": "muzeum",
         "description": "Zabytkowy dźwig portowy i jedna z bram wodnych Gdańska, która mieści się nad Motławą, na końcu ulicy Szerokiej. Jest to jedna z filii Narodowego Muzeum Morskiego w Gdańsku oraz największy i najstarszy z zachowanych dźwigów portowych średniowiecznej Europy.",
         "latitude": 54.350466,
         "longitude": 18.657392,
@@ -35,7 +35,7 @@
     {
         "name": "Neptun",
         "yearOfConstruction": 1633,
-        "buildingType": "monument",
+        "buildingType": "posąg",
         "description": "Zabytkowa fontanna w Gdańsku, która powstała z inicjatywy burmistrza Bartłomieja Schachmanna i rady miejskiej. Stoi w najbardziej reprezentacyjnej części Gdańska – na Długim Targu, przed wejściem do Dworu Artusa.",
         "latitude": 54.348544,
         "longitude": 18.653228,
@@ -46,7 +46,7 @@
     {
         "name": "Europejskie Centrum Solidarności",
         "yearOfConstruction": 2007,
-        "buildingType": "museum",
+        "buildingType": "muzeum",
         "description": "Instytucja z siedzibą w Gdańsku, powołana na podstawie umowy z dnia 8 listopada 2007 w sprawie utworzenia i prowadzenia wspólnej instytucji kultury pod nazwą Europejskie Centrum Solidarności, zawartej między Ministrem Kultury i Dziedzictwa Narodowego, Województwem Pomorskim, Miastem Gdańsk, Niezależnym Samorządnym Związkiem Zawodowym „Solidarność” i Fundacją Centrum Solidarności.",
         "latitude": 54.361311,
         "longitude": 18.649738,
@@ -57,7 +57,7 @@
     {
         "name": "Dworzec Główny",
         "yearOfConstruction": 2015,
-        "buildingType": "other",
+        "buildingType": "inny",
         "description": "Największa pasażerska stacja kolejowa w Gdańsku, położona na trasie Tczew – Gdynia. Mieści się w zabytkowym budynku przy ulicy Podwale Grodzkie, w Śródmieściu Gdańska. Obsługuje połączenia zarówno międzymiastowe, jak i międzynarodowe.",
         "latitude": 54.356581,
         "longitude": 18.644329,

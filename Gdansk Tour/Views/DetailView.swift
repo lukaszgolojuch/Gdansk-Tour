@@ -54,8 +54,20 @@ struct DetailView: View {
 
                     Text("Opis")
                         .font(.title2)
-                    Text(buildingData.description )
+                    Text(buildingData.description)
                         .padding(.top, 10)
+                    
+                    Divider()
+                    
+                    Text("Strona internetowa")
+                        .font(.title2)
+                    NavigationLink {
+                        WebView(url: buildingData.website)
+                    } label: {
+                        Text(buildingData.website)
+                            .padding(.top, 10)
+                    }
+
                 }
                 .padding()
             }

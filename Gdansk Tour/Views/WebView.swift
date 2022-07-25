@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WebViewSwiftUI: View {
+struct WebView: View {
     
     let url: String?
     
@@ -19,6 +19,6 @@ struct WebViewSwiftUI: View {
 
 struct WebViewSwiftUI_Previews: PreviewProvider {
     static var previews: some View {
-        WebViewSwiftUI(url: "https://www.google.com")
+        WebView(url: "https://www.google.com")
     }
 }
