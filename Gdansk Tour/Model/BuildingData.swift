@@ -6,16 +6,15 @@
 //
 
 import UIKit
-import WebKit
 import MapKit
 
 struct BuildingData: Decodable {
-    var name: String = ""
-    var yearOfConstruction: Int = 2000
-    var buildingType: String = "Muzeum"
-    var description: String = "Building description"
-    var latitude: CLLocationDegrees = 54.356069
-    var longitude: CLLocationDegrees = 18.659916
-    var website: String = "https://muzeum1939.pl/"
-    var imageName: String = "image_name"
+    var name: String = "" //building name
+    var yearOfConstruction: Int = 2000 //building year of contruction
+    var buildingType: String = "Muzeum" //building type
+    var description: String = "Building description" //building descryption
+    var latitude: CLLocationDegrees = 54.356069 //building latitude
+    var longitude: CLLocationDegrees = 18.659916 //building longtitude
+    var website: String = "https://muzeum1939.pl/" //building website URL
+    var imageName: String = "image_name" //building image name
 }

@@ -135,9 +135,9 @@
 		896198B1283D425E0084977D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				89E974742849087B007677EB /* Classfier.swift */,
 				89E974722848EF6F007677EB /* ImagePicker.swift */,
 				89210F5E28439B530050F3B5 /* WebViewController.swift */,
-				89E974742849087B007677EB /* Classfier.swift */,
 				89E9747628490F27007677EB /* ImageClassfier.swift */,
 				899C1B232882C77700AD6640 /* JSONController.swift */,
 			);
