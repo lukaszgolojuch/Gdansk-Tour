@@ -10,7 +10,7 @@
     <img src="Images/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Colorful Calculator</h3>
+  <h3 align="center">Gdańsk Tour with AI</h3>
 
   <p align="center">
     SwiftUI iOS application that uses AI to recognize historical buildings and museums of Gdańsk. 
