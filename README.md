@@ -6,8 +6,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/lukaszgolojuch/Colorful-Calculator">
-    <img src="Images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/lukaszgolojuch/Gdansk-Tour">
+    <img src="Images/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Colorful Calculator</h3>
